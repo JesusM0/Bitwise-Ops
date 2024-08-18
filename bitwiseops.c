@@ -24,6 +24,16 @@ void setBit(int num, int pos){
     printf("%d\n", res);
 }
 
+void multiplyPowersTwo(int num, int shift){
+    int res = num << shift;
+    printf("%d\n", res);
+}
+
+void dividePowersTwo(int num, int shift){
+    int res = num >> shift;
+    printf("%d\n", res);
+}
+
 int main(){
     // char letter;
     // printf("Enter a letter to conver to lower or upper case:\n");
@@ -31,11 +41,16 @@ int main(){
     // caseConverter(letter);
 
     int num;
-    int pos;
+    int shift;
+    // int pos;
     printf("Enter a num:\n");
     scanf("%d", &num);
-    printf("Enter the bit position to clear:\n");
-    scanf("%d", &pos);
+    // printf("Enter the bit position to set:\n");
+    // scanf("%d", &pos);
+    printf("Enter the shift:\n");
+    scanf("%d", &shift);
+    // multiplyPowersTwo(num, shift);
+    // dividePowersTwo(num, shift);
     // clearBit(num, pos);
-    setBit(num, pos);
+    // setBit(num, pos);
 }
