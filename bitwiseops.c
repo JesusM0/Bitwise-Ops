@@ -20,7 +20,7 @@ void clearBit(int num, int pos){
 
 void setBit(int num, int pos){
     int mask = 1 << pos;
-    int res = num | res;
+    int res = (num | mask);
     printf("%d\n", res);
 }
 
