@@ -2,18 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-void checkOddOrEven(int num) {
-    if (num & 1) {
-        printf("%d is odd.\n", num);
-    } else {
-        printf("%d is even.\n", num);
-    }
+void caseConverter(char letter){
+
+    char res = letter ^ 32;
+
+    printf("Converted %c to %c\n", letter, res);
 }
 
-int main() {
-    int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    checkOddOrEven(num);
-    return 0;
+int main(){
+    char letter;
+    printf("Enter a letter to conver to lower or upper case:\n");
+    scanf("%c", &letter);
+    caseConverter(letter);
 }
